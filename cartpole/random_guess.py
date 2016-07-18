@@ -2,8 +2,8 @@ import gym
 import numpy as np
 
 MAX_EPISODES = 20  # episodes per model
-MAX_STEPS = 200  # max steps per episode
-OUTPUT_DIR = '/tmp/cartpole-random-guess'
+MAX_STEPS = 200    # max steps per episode
+OUTPUT_DIR = '/tmp/cartpole-random-guess'  # env monitor output goes here
 
 def get_action(w, s):
   return int(np.dot(w, s) > 0)
