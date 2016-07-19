@@ -5,7 +5,7 @@ CUTOFF_STREAK = 1000  # stop when we haven't seen improvement in 1000 episodes
 MAX_EPISODES  = 10    # number of episodes to evaluate each model
 MAX_STEPS     = 200   # max steps per episode
 MAX_NOISE     = 0.05  # max amount of noise (as %) to add per iteration
-OUTPUT_DIR   = '/tmp/cartpole-random-guess'  # env monitor output goes here
+OUTPUT_DIR    = '/tmp/cartpole-random-guess'  # env monitor output goes here
 
 def get_action(w, s):
   return int(np.dot(w, s) > 0)
